@@ -45,7 +45,16 @@ export interface About {
 
 export interface Research {
   description: JSX.Element;
+  publicationItems: PublicationItem[];
 }
+
+export interface PublicationItem{
+  title: string;
+  colaborators: string;
+  arxivid: string;
+  year: string;
+}
+
 
 export interface AboutItem {
   label: string;

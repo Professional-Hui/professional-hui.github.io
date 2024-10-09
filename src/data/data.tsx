@@ -88,7 +88,7 @@ export const heroData: Hero = {
     description: (
       <>
         <div className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I am a postdoc at Shanghai Center for Mathematical Sciences. My mentor is <strong className="text-stone-100">Prof. Zhiyuan Li</strong>. Before that, I obtained my Ph.D. in Mathematics supervised by <strong className="text-stone-100">Prof. Qizheng Yin</strong>. Here is my CV.
+          I am a postdoc at <a className='text-white' href="https://scms.fudan.edu.cn">Shanghai Center for Mathematical Sciences</a>. My mentor is <a className='text-white' href="https://faculty.fudan.edu.cn/zhiyuanli/zh_CN/index.htm"><strong className="text-stone-100">Prof. Zhiyuan Li</strong></a>. Before that, I obtained my Ph.D. in Mathematics supervised by <a className='text-white' href="http://faculty.bicmr.pku.edu.cn/~qizheng/#"><strong className="text-stone-100">Prof. Qizheng Yin</strong></a>. 
         </div>
       </>
     ),
@@ -131,7 +131,7 @@ export const aboutData: About = {
 export const ResearchData: Research = {
   description: (
     <>
-      My research focuses on algebraic geometry. Specifically, I am interested in the geometry of hyper-Kähler manifolds, coherent sheaves, derived categories, algebraic cycles and Hodge theory. 
+      My research interest is in algebraic geometry. Specifically, I'm mainly focused on the geometry of hyper-Kähler varieties, coherent sheaves, derived categories and moduli spaces. 
     </>
   ),
   publicationItems: [

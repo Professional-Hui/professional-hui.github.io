@@ -35,7 +35,7 @@ const Hero: FC = memo(() => {
               <div className={classNames('col-span-1 flex flex-col gap-y-6 md:text-left', {'md:col-span-3': !!aboutme.profileImageSrc})}>
                 <div className="flex flex-col gap-y-2">
                   <h2 className="text-2xl font-bold text-white">About me</h2>
-                  <p className="prose prose-sm text-gray-300 sm:prose-base">{aboutme.description}</p>
+                  <div className="prose prose-sm text-gray-300 sm:prose-base">{aboutme.description}</div>
                 </div>
               </div>
             </div>

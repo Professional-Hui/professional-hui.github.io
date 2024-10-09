@@ -13,7 +13,7 @@ const Research: FC = memo(() => {
     
       <div className="relative flex w-full flex  flex-col gap-y-2 pb-9">
         <h2 className="text-3xl font-bold text-white flex items-center justify-center md:justify-start">Research</h2>
-        <p className="prose prose-lg text-gray-300 max-w-full font-bold sm:prose-lg">{description}</p>
+        <div className="prose prose-lg text-gray-300 max-w-full font-bold sm:prose-lg">{description}</div>
       </div>
 
       <div className='flex-col divide-y-2 divide-neutral-300'>
@@ -25,11 +25,11 @@ const Research: FC = memo(() => {
                 const arxivurl=`https://arxiv.org/abs/${arxivid}`
                 return (
                   <li key={idx}>
-                    <p>
+                    {/* <p> */}
                       <div className='prose text-lg text-gray-300 text-neutral-800 text-white max-w-full'>
                       <span className=''>{title}</span>. arXiv: <span className='test-sm italic'><a className='test-sm italic text-neutral-800 text-white' href={arxivurl}>{arxivid}</a></span>. {year}.
                       </div>
-                    </p>
+                    {/* </p> */}
                     <span className='text-white prose prose-base'>with</span> <span className="flex-1 prose-base font-medium text-neutral-800 text-white italic sm:flex-none"> {colaborators}</span>
                   </li>
                 )
