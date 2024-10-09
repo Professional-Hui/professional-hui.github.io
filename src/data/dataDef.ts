@@ -23,8 +23,8 @@ export interface HomepageMeta {
 export interface Hero {
   imageSrc: string;
   name: string;
-  description: JSX.Element;
   actions: HeroActionItem[];
+  aboutme: About;
 }
 
 interface HeroActionItem {
@@ -39,8 +39,12 @@ interface HeroActionItem {
  */
 export interface About {
   profileImageSrc?: string;
-  description: string;
+  description: JSX.Element;
   aboutItems: AboutItem[];
+}
+
+export interface Research {
+  description: JSX.Element;
 }
 
 export interface AboutItem {

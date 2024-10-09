@@ -1,6 +1,5 @@
 import {
   AcademicCapIcon,
-  ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
@@ -13,7 +12,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,10 +24,11 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/Avatar.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
+  Research,
   ContactSection,
   ContactType,
   Hero,
@@ -52,11 +52,11 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
-  About: 'about',
+  Hero: 'About',
+  Research: 'research',
   Contact: 'contact',
   Portfolio: 'portfolio',
-  Resume: 'resume',
+  Resume: 'activities',
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
@@ -69,34 +69,38 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
-  description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
-    </>
-  ),
+  name: `Hanfei Guo | 郭函菲`,
   actions: [
-    {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    // {
+    //   href: '/assets/resume.pdf',
+    //   text: 'Resume',
+    //   primary: true,
+    //   Icon: ArrowDownTrayIcon,
+    // },
+    // {
+    //   href: `#${SectionId.Contact}`,
+    //   text: 'Contact',
+    //   primary: false,
+    // },
   ],
+  aboutme: {
+    profileImageSrc: profilepic,
+    description: (
+      <>
+        <div className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          I am a postdoc at Shanghai Center for Mathematical Sciences. My mentor is <strong className="text-stone-100">Prof. Zhiyuan Li</strong>. Before that, I obtained my Ph.D. in Mathematics supervised by <strong className="text-stone-100">Prof. Qizheng Yin</strong>. Here is my CV.
+        </div>
+      </>
+    ),
+    aboutItems: [
+      {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+      {label: 'Age', text: '29', Icon: CalendarIcon},
+      {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
+      {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+      {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
+      {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    ],
+  }
 };
 
 /**
@@ -104,9 +108,13 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
+  description: (
+  <>
+  Use this bio section as your way of describing yourself and saying what you do, what technologies you like
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  in.
+  </>
+  ),
   aboutItems: [
     {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
@@ -116,6 +124,37 @@ export const aboutData: About = {
     {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };
+
+/**
+ * Research section
+ */
+export const ResearchData: Research = {
+  description: (
+    <>
+      My research focuses on algebraic geometry. Specifically, I am interested in the geometry of hyper-Kähler manifolds, coherent sheaves, derived categories, algebraic cycles and Hodge theory. 
+    </>
+  ),
+  publicationItems: [
+    {
+      title: "Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces",
+      colaborators: "Zhiyu Liu",
+      arxivid: "2406.19361",
+      year: "2024",
+    },
+    {
+      title: "Lagrangian families of Bridgeland moduli spaces from Gushel-Mukai fourfolds and double EPW cubes",
+      colaborators: "Soheyla Feyzbakhsh, Zhiyu Liu and Shizhuo Zhang",
+      arxivid: "2404.11598",
+      year: "2024",
+    },
+    {
+      title: "Conics on Gushel-Mukai fourfolds, EPW sextics and Bridgeland moduli spaces",
+      colaborators: "Zhiyu Liu and Shizhuo Zhang",
+      arxivid: "2203.05442",
+      year: "2022",
+    },
+  ]
+}
 
 /**
  * Skills section
@@ -278,6 +317,45 @@ export const education: TimelineItem[] = [
     location: 'School of Business',
     title: 'What did you study 101',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
+export const Talks: TimelineItem[] = [
+  {
+    date: 'January 22-26, 2024',
+    location: 'Department of Mathematics, University of Genova',
+    title: 'Introduction of modular sheaves on hyper-Kähler varieties, Conference on Fano and hyper-Kähler varieties',
+    content: <p></p>,
+  },
+  {
+    date: 'November 2-3, 2023',
+    location: 'USTC Autumn Algebraic Geometry Seminar, University of Science and Technology of China',
+    title: 'Cubic fourfolds, hyper-Kähler varieties and atomic Lagrangians',
+    content: <p></p>,
+  },
+  {
+    date: 'October 26, 2023',
+    location: 'BIMSA-YMSC AG Seminar, Yau Mathematical Science Center, Tsinghua University',
+    title: 'Cubic fourfolds, hyper-Kähler varieties and atomic Lagrangians',
+    content: <p></p>,
+  },
+  {
+    date: 'November 2-3, 2023',
+    location: 'IASM, Zhejiang University',
+    title: 'Fano fourfolds, hyper-Kähler varieties and Lagrangians, Banff Hangzhou workshop on "Geometry of hyper-Kähler Varieties"',
+    content: <p></p>,
+  },
+  {
+    date: 'May 27, 2023',
+    location: 'Yau Mathematical Science Center, Tsinghua University',
+    title: 'Fano fourfolds, hyper-Kähler varieties and Atomic Lagrangians, Mini-workshop on geometry',
+    content: <p></p>,
+  },
+  {
+    date: 'July 18-22, 2022',
+    location: '3rd National Algebraic Geometry Conference, online, Shanghai Center for Mathematical Science',
+    title: 'Conics on Gushel-Mukai fourfolds, EPW sextics and Bridgeland moduli spaces',
+    content: <p></p>,
   },
 ];
 
