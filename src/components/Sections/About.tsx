@@ -20,14 +20,14 @@ const Research: FC = memo(() => {
         <h2 className="text-2xl font-bold text-white flex items-center justify-center md:justify-start">Publication & Preprints</h2>
         <div>
           <ul className='list-disc col-span-1 flex flex-col gap-y-4 first:pt-2'>
-            {publicationItems.map(({title, colaborators, arxivid, year}, idx) => {
+            {publicationItems.map(({title, colaborators, arxivid, year, preprintinfo}, idx) => {
 
                 const arxivurl=`https://arxiv.org/abs/${arxivid}`
                 return (
                   <li key={idx}>
                     {/* <p> */}
                       <div className='prose text-lg text-gray-300 text-neutral-800 text-white max-w-full'>
-                      <span className=''>{title}</span>. arXiv: <span className='test-sm italic'><a className='test-sm italic text-neutral-800 text-white' href={arxivurl}>{arxivid}</a></span>. {year}.
+                      <span className=''>{title}</span>.{preprintinfo} arXiv: <span className='test-sm italic'><a className='test-sm italic text-neutral-800 text-white' href={arxivurl}>{arxivid}</a></span>. {year}.
                       </div>
                     {/* </p> */}
                     <span className='text-white prose prose-base'>with</span> <span className="flex-1 prose-base font-medium text-neutral-800 text-white italic sm:flex-none"> {colaborators}</span>

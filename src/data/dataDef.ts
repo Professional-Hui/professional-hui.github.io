@@ -53,6 +53,7 @@ export interface PublicationItem{
   colaborators: string;
   arxivid: string;
   year: string;
+  preprintinfo: string;
 }
 
 
