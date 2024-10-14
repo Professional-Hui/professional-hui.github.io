@@ -314,7 +314,7 @@ export const Talks: TimelineItem[] = [
   },
   {
     date: 'November, 2023',
-    location: 'Banff Hangzhou workshop on Geometry of hyper-Kähler Varieties, Zhejiang University',
+    location: 'Banff Hangzhou workshop on geometry of hyper-Kähler Varieties, Zhejiang University',
     title: 'Fano fourfolds, hyper-Kähler varieties and Lagrangians',
     content: <p></p>,
   },
