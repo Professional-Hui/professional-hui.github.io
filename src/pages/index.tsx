@@ -3,9 +3,9 @@ import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
 import Research from '../components/Sections/About';
+import Contact from '../components/Sections/Contact';
 import Hero from '../components/Sections/Hero';
 import Resume from '../components/Sections/Resume';
-import Contact from '../components/Sections/Contact';
 import {homePageMeta} from '../data/data';
 
 // eslint-disable-next-line react-memo/require-memo

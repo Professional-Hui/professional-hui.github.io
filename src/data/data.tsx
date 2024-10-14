@@ -1,12 +1,12 @@
 
-import heroImage from '../images/background.jpg';
 import profilepic from '../images/Avatar.jpg';
+import heroImage from '../images/background.jpg';
 import {
-  Research,
   ContactSection,
   ContactType,
   Hero,
   HomepageMeta,
+  Research,
   TimelineItem,
 } from './dataDef';
 
