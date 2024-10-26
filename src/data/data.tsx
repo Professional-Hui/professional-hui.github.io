@@ -58,7 +58,7 @@ export const heroData: Hero = {
     description: (
       <>
         <div className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I am a postdoc at <a className='text-white' href="https://scms.fudan.edu.cn">Shanghai Center for Mathematical Sciences</a>. Before that, I obtained my Ph.D. in mathematics at Peking University in 2023, supervised by <a className='text-white' href="http://faculty.bicmr.pku.edu.cn/~qizheng/#"><strong className="text-stone-100">Prof. Qizheng Yin</strong></a>. 
+          I am currently a postdoc at <a className='text-white' href="https://scms.fudan.edu.cn">Shanghai Center for Mathematical Sciences</a>. Before that, I obtained my Ph.D. in mathematics at Peking University, supervised by <a className='text-white' href="http://faculty.bicmr.pku.edu.cn/~qizheng/#"><strong className="text-stone-100">Prof. Qizheng Yin</strong></a>. 
         </div>
       </>
     ),
@@ -294,6 +294,18 @@ export const ResearchData: Research = {
 // ];
 
 export const Talks: TimelineItem[] = [
+  {
+    date: 'December, 2024',
+    location: 'Conference on Algebraic Geometry, Chongqing University of Technology',
+    title: 'Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces',
+    content: <p></p>,
+  },
+  {
+    date: 'December, 2024',
+    location: 'Algebraic Geometry Seminar, East China Normal University',
+    title: 'Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces',
+    content: <p></p>,
+  },
   {
     date: 'January, 2024',
     location: 'Conference on Fano and hyper-Kähler varieties, University of Genova',
