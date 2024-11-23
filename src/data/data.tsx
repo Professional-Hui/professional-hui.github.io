@@ -111,6 +111,8 @@ export const ResearchData: Research = {
       arxivid: "2406.19361",
       year: "2024",
       preprintinfo: "",
+      printinfo: "",
+      url: "",
     },
     {
       title: "Lagrangian families of Bridgeland moduli spaces from Gushel–Mukai fourfolds and double EPW cubes",
@@ -118,13 +120,17 @@ export const ResearchData: Research = {
       arxivid: "2404.11598",
       year: "2024",
       preprintinfo: "",
+      printinfo: "",
+      url: "",
     },
     {
       title: "Conics on Gushel–Mukai fourfolds, EPW sextics and Bridgeland moduli spaces",
       colaborators: "Zhiyu Liu and Shizhuo Zhang",
       arxivid: "2203.05442",
       year: "2022",
-      preprintinfo: " To appear in Math. Res. Lett.,",
+      preprintinfo: "",
+      printinfo: "Math. Res. Lett. 31 (2024), Number 4, 1061-1106",
+      url: "https://link.intlpress.com/JDetail/1858549322974556161",
     },
   ]
 }
@@ -303,6 +309,12 @@ export const Talks: TimelineItem[] = [
   {
     date: 'December, 2024',
     location: 'Algebraic Geometry Seminar, East China Normal University',
+    title: 'Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces',
+    content: <p></p>,
+  },
+  {
+    date: 'November, 2024',
+    location: 'Algebraic Geometry Seminar, ShanghaiTech University',
     title: 'Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces',
     content: <p></p>,
   },

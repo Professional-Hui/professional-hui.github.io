@@ -54,6 +54,8 @@ export interface PublicationItem{
   arxivid: string;
   year: string;
   preprintinfo: string;
+  printinfo: string;
+  url: string;
 }
 
 
