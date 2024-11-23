@@ -21,9 +21,10 @@ const Research: FC = memo(() => {
         <div>
           <ul className='list-disc col-span-1 flex flex-col gap-y-4 first:pt-2'>
             {publicationItems.map(({title, colaborators, arxivid, year, preprintinfo, printinfo, url}, idx) => {
-
-                const arxivurl=`https://arxiv.org/abs/${arxivid}`
-                year = year;
+              
+              const arxivurl=`https://arxiv.org/abs/${arxivid}`
+              if (arxivid == "")
+                arxivid = year;
                 if (printinfo == "")
                   return (
                     <li key={idx}>
