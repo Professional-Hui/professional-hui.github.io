@@ -106,6 +106,15 @@ export const ResearchData: Research = {
   ),
   publicationItems: [
     {
+      title: "Double EPW cubes from twisted cubics on Gushel–Mukai fourfolds",
+      colaborators: "Soheyla Feyzbakhsh, Zhiyu Liu and Shizhuo Zhang",
+      arxivid: "2501.12964",
+      year: "2025",
+      preprintinfo: "",
+      printinfo: "",
+      url: "",
+    },
+    {
       title: "Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces",
       colaborators: "Zhiyu Liu",
       arxivid: "2406.19361",
