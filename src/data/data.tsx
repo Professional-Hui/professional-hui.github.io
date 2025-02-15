@@ -124,7 +124,7 @@ export const ResearchData: Research = {
       url: "",
     },
     {
-      title: "Lagrangian families of Bridgeland moduli spaces from Gushel–Mukai fourfolds and double EPW cubes",
+      title: "Lagrangian families of Bridgeland moduli spaces from Gushel–Mukai fourfolds",
       colaborators: "Soheyla Feyzbakhsh, Zhiyu Liu and Shizhuo Zhang",
       arxivid: "2404.11598",
       year: "2024",
