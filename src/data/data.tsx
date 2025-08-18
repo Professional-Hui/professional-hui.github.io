@@ -112,6 +112,7 @@ export const ResearchData: Research = {
       year: "2025",
       preprintinfo: "",
       printinfo: "",
+      volumepage: "",
       url: "",
     },
     {
@@ -120,8 +121,9 @@ export const ResearchData: Research = {
       arxivid: "2406.19361",
       year: "2024",
       preprintinfo: "",
-      printinfo: "",
-      url: "",
+      printinfo: "Proc. Lond. Math. Soc.",
+      volumepage: "131 (2025), no. 2, Paper No. e70075.",
+      url: "https://arxiv.org/abs/2406.19361",
     },
     {
       title: "Lagrangian families of Bridgeland moduli spaces from Gushel–Mukai fourfolds",
@@ -129,8 +131,9 @@ export const ResearchData: Research = {
       arxivid: "2404.11598",
       year: "2024",
       preprintinfo: "",
-      printinfo: "",
-      url: "",
+      printinfo: "To appear in Compos. Math.",
+      volumepage: "",
+      url: "https://arxiv.org/abs/2404.11598",
     },
     {
       title: "Conics on Gushel–Mukai fourfolds, EPW sextics and Bridgeland moduli spaces",
@@ -138,7 +141,8 @@ export const ResearchData: Research = {
       arxivid: "2203.05442",
       year: "2022",
       preprintinfo: "",
-      printinfo: "Math. Res. Lett. 31 (2024), Number 4, 1061-1106",
+      printinfo: "Math. Res. Lett.",
+      volumepage: "31 (2024), Number 4, 1061-1106.",
       url: "https://link.intlpress.com/JDetail/1858549322974556161",
     },
   ]

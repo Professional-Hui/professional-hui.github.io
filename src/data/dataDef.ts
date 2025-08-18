@@ -55,6 +55,7 @@ export interface PublicationItem{
   year: string;
   preprintinfo: string;
   printinfo: string;
+  volumepage: string;
   url: string;
 }
 
