@@ -131,8 +131,8 @@ export const ResearchData: Research = {
       arxivid: "2404.11598",
       year: "2024",
       preprintinfo: "",
-      printinfo: "To appear in Compos. Math.",
-      volumepage: "",
+      printinfo: "Compos. Math.",
+      volumepage: "161 (2025), 2091–2135.",
       url: "https://arxiv.org/abs/2404.11598",
     },
     {
@@ -312,7 +312,14 @@ export const ResearchData: Research = {
 //   },
 // ];
 
+
 export const Talks: TimelineItem[] = [
+  {
+    date: 'June, 2025',
+    location: 'Algebraic Geometry Seminar, SIMIS',
+    title: 'Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces',
+    content: <p></p>,
+  },
   {
     date: 'December, 2024',
     location: 'Conference on Algebraic Geometry, Chongqing University of Technology',
