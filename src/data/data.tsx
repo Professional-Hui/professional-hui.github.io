@@ -315,6 +315,12 @@ export const ResearchData: Research = {
 
 export const Talks: TimelineItem[] = [
   {
+    date: 'December, 2025',
+    location: 'Algebraic Geometry Seminar, Shanghai Jiao Tong University',
+    title: 'Lagrangian families of Bridgeland moduli spaces from Gushel–Mukai fourfolds',
+    content: <p></p>,
+  },
+  {
     date: 'June, 2025',
     location: 'Algebraic Geometry Seminar, SIMIS',
     title: 'Atomic sheaves on hyper-Kähler manifolds via Bridgeland moduli spaces',
