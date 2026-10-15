@@ -106,6 +106,16 @@ export const ResearchData: Research = {
   ),
   publicationItems: [
     {
+      title: "Stable atomic vector bundles are 1-obstructed",
+      colaborators: "",
+      arxivid: "2610.20213",
+      year: "2026",
+      preprintinfo: "",
+      printinfo: "",
+      volumepage: "",
+      url: "https://arxiv.org/abs/2610.20213",
+    },
+    {
       title: "Double EPW cubes from twisted cubics on Gushel–Mukai fourfolds",
       colaborators: "Soheyla Feyzbakhsh, Zhiyu Liu and Shizhuo Zhang",
       arxivid: "2501.12964",

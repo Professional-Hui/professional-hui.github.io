@@ -33,7 +33,11 @@ const Research: FC = memo(() => {
                         <a className='prose text-lg text-gray-300 text-neutral-800 text-white max-w-full' href={arxivurl}>{title}</a>.{preprintinfo} arXiv: <span className='italic text-neutral-800 text-white'>{arxivid}</span>.
                         </div>
                       {/* </p> */}
-                      <span className='text-white prose prose-base'>with</span> <span className="flex-1 prose-base font-medium text-neutral-800 text-white italic sm:flex-none"> {colaborators}</span>
+                      {colaborators && (
+                        <>
+                          <span className='text-white prose prose-base'>with</span> <span className="flex-1 prose-base font-medium text-neutral-800 text-white italic sm:flex-none"> {colaborators}</span>
+                        </>
+                      )}
                     </li>
                   )
                   else
@@ -45,7 +49,11 @@ const Research: FC = memo(() => {
                           <span className='italic text-neutral-800 text-white'> {volumepage}</span>
                           </div>
                         {/* </p> */}
-                        <span className='text-white prose prose-base'>with</span> <span className="flex-1 prose-base font-medium text-neutral-800 text-white italic sm:flex-none"> {colaborators}</span>
+                        {colaborators && (
+                          <>
+                            <span className='text-white prose prose-base'>with</span> <span className="flex-1 prose-base font-medium text-neutral-800 text-white italic sm:flex-none"> {colaborators}</span>
+                          </>
+                        )}
                       </li>
                     )
               }
