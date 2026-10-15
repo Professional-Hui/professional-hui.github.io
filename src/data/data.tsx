@@ -58,7 +58,7 @@ export const heroData: Hero = {
     description: (
       <>
         <div className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I am currently a postdoc at <a className='text-white' href="https://scms.fudan.edu.cn">Shanghai Center for Mathematical Sciences</a>. Before that, I obtained my Ph.D. in mathematics at Peking University, supervised by <a className='text-white' href="http://faculty.bicmr.pku.edu.cn/~qizheng/#"><strong className="text-stone-100">Prof. Qizheng Yin</strong></a>. 
+          I am an assistant professor in the School of Mathematical Sciences at Tongji University. Previously, I was a postdoctoral researcher at SCMS, mentored by <a className='text-white' href="https://faculty.fudan.edu.cn/zhiyuanli/zh_CN/index.htm">Zhiyuan Li</a>. I received my Ph.D. from Peking University under the supervision of <a className='text-white' href="http://faculty.bicmr.pku.edu.cn/~qizheng/#"><strong className="text-stone-100">Qizheng Yin</strong></a>.
         </div>
       </>
     ),
