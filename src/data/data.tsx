@@ -451,13 +451,12 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'hfguo@fudan.edu.cn / hanfeiguo23@gmail.com',
-      href: 'mailto:hfguo@fudan.edu.cn',
+      text: 'hfguo@tongji.edu.cn / hanfeiguo23@gmail.com',
+      href: 'mailto:hfguo@tongji.edu.cn',
     },
     {
       type: ContactType.Location,
-      text: 'SCMS, Fudan University, Room 339-341, 2005 Songhu Road, Shanghai, China',
-      // href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Ningjing Building, Tongji University (Siping Campus), 1239 Siping Road, Yangpu District, Shanghai 200092, P.R. China',
     },
     // {
     //   type: ContactType.Instagram,

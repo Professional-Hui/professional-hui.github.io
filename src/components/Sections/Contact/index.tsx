@@ -38,20 +38,21 @@ const Contact: FC = memo(() => {
           <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
             {items.map(({type, text, href}) => {
               const {Icon, srLabel} = ContactValueMap[type];
+              const ItemTag = href ? 'a' : 'div';
               return (
                 <div key={srLabel}>
                   <dt className="sr-only">{srLabel}</dt>
                   <dd className="flex items-center">
-                    <a
+                    <ItemTag
                       className={classNames(
-                        '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500',
-                        {'hover:text-white': href},
+                        '-m-2 flex rounded-md p-2 text-neutral-300',
+                        {'hover:text-white focus:outline-none focus:ring-2 focus:ring-orange-500': href},
                       )}
                       href={href}
-                      target="_blank">
+                      target={href ? '_blank' : undefined}>
                       <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-neutral-100 sm:h-5 sm:w-5" />
                       <span className="ml-3 text-sm sm:text-base">{text}</span>
-                    </a>
+                    </ItemTag>
                   </dd>
                 </div>
               );
